@@ -1,0 +1,14 @@
+<%- include ../partials/header.ejs %>
+
+ <div class="container">
+    <h1><%= title %></h1>
+    <h2>Authors:</h2>
+    <ul>
+      <% for(var count=0; count < authors.length; count++) { %>
+      <li><%= authors[count] %></li>
+      <% } %>
+
+    </ul>
+  </div>
+
+<%- include ../partials/footer.ejs %>
